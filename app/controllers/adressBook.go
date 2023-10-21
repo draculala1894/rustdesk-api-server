@@ -46,7 +46,7 @@ func (ctl *AddressBookController) List() {
 		})
 	}
 
-	// 查询出来所有已登录的账号列表
+	/* 查询出来所有已登录的账号列表
 	tokens := services.Token.FindTokens(ctl.loginUserInfo.Id)
 	for _, item := range *tokens {
 		ist := false
@@ -66,6 +66,7 @@ func (ctl *AddressBookController) List() {
 				Tags:     strings.Split("", ","),
 			})
 		}
+		*/
 	}
 
 	jdata, _ := json.Marshal(ack)
